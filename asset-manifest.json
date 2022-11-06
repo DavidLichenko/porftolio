@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/porftolio/static/css/main.e35e1625.css",
-    "main.js": "/porftolio/static/js/main.c7f04d5b.js",
+    "main.js": "/porftolio/static/js/main.7b8a632d.js",
     "index.html": "/porftolio/index.html",
     "main.e35e1625.css.map": "/porftolio/static/css/main.e35e1625.css.map",
-    "main.c7f04d5b.js.map": "/porftolio/static/js/main.c7f04d5b.js.map"
+    "main.7b8a632d.js.map": "/porftolio/static/js/main.7b8a632d.js.map"
   },
   "entrypoints": [
     "static/css/main.e35e1625.css",
-    "static/js/main.c7f04d5b.js"
+    "static/js/main.7b8a632d.js"
   ]
 }
