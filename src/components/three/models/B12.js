@@ -6,15 +6,18 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('../../../../B12.gltf')
-  return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Center.geometry} material={materials.Center} />
-      <mesh geometry={nodes.Exhaust.geometry} material={materials.Exhaust} position={[0, -0.27, -1.61]} scale={1.42} />
-      <mesh geometry={nodes.Exhaust_Blades.geometry} material={materials['Exhaust Fans']} position={[0, 0.45, -3.63]} />
-      <mesh geometry={nodes.Sides.geometry} material={materials.Sides} />
-    </group>
-  )
+    const { nodes, materials } = useGLTF('./b1.gltf')
+    return (
+        <group {...props} dispose={null}>
+            <group rotation={[-Math.PI / 2, 0, 0]} scale={14} >
+                <group rotation={[Math.PI / 2, 0, 0]}>
+                    <mesh geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
+                    <mesh geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
+                    <spotLight castShadow  intensity={10} angle={0.2} penumbra={1} decay={2} position={[0, 0, -.01]} rotation={[Math.PI, 0, 0]} scale={0.09} />
+                </group>
+            </group>
+        </group>
+    )
 }
 
-useGLTF.preload('../../../../B12.gltf')
+useGLTF.preload('./b1.gltf')
