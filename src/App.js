@@ -41,7 +41,6 @@ export default function App() {
 
     return (
         <>
-
             <Canvas  shadows gl={{ antialias: false }}>
                 <CameraController/>
                 <color attach="background" args={['#d08b8b']} />
@@ -59,7 +58,6 @@ export default function App() {
                 <OrthographicCamera makeDefault far={90} near={-90}  position={[0, 0, -8]} zoom={90} />
                 <OrbitControls enablePan={true} enableRotate={true} enableZoom={true} />
             </Canvas>
-
         </>
     );
 }
