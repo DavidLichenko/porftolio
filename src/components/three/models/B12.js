@@ -21,17 +21,18 @@ export default function Model(props) {
 
     }, [mixer]);
     const { scene } = useThree();
-    let targetObj = scene.getObjectByName("targetObject")
-    let oldObjX = 8.35
-    let oldObjY = 3.56
-    let oldObjZ = -2.44
-    useFrame((state) => {
-        targetObj.visible = false
-        targetObj.position.x = oldObjX - -state.mouse.x
-        targetObj.position.z = oldObjZ -  -state.mouse.x*2
-        targetObj.position.y = oldObjY - -state.mouse.y
-    })
+    const targetObj = scene.getObjectByName("targetObject")
+    const B12 = scene.getObjectByName("B12")
+    const oldObjY = 3.56
+    const oldObjZ = -2.44
 
+    useFrame((state) => {
+        //lightPosition
+        targetObj.visible = false
+        targetObj.position.z = oldObjZ -  -state.mouse.x*4
+        targetObj.position.y = oldObjY - -state.mouse.y
+        //rotationB12
+    })
 
     return (
 
@@ -51,9 +52,9 @@ export default function Model(props) {
                         <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, -Math.PI / 2, 0]}>
                             <group name="Drone_StaticMesh_0">
                                 <group name="Object_4">
-                                    <mesh name="Object_0" target={targetObj} castShadow receiveShadow geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
-                                    <mesh name="Object_0_1"target={targetObj}  castShadow receiveShadow geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
-                                    <SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={0.35}  anglePower={15} attenuation={props.Light} intensity={props.Light} penumbra={1} decay={2} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>
+                                    <mesh name="Object_0" castShadow lookAt={targetObj} receiveShadow geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
+                                    <mesh name="Object_0_1" castShadow lookAt={targetObj} receiveShadow geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
+                                    <SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={.30}  anglePower={15} attenuation={props.Light} intensity={props.Light} penumbra={.7} decay={1.4} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>
                                         <group position={[0, 0, -1]} />
                                     </SpotLight>
                                 </group>
@@ -64,6 +65,7 @@ export default function Model(props) {
             </group>
         </group>
     )
+
 }
 
 

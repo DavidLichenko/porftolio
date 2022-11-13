@@ -63,7 +63,7 @@ export default function Model(props) {
         </group>
         <mesh castShadow receiveShadow geometry={nodes.robot002.geometry} material={materials.robot} />
       </group>
-      <PerspectiveCamera castShadow makeDefault={true} far={1000} near={0.9} fov={44.1} position={[-2.93, 1.17, -3.84]} rotation={[0.22, -1.51, 0.22]} />
+      <PerspectiveCamera castShadow makeDefault={true} far={1000} near={0.9} fov={44.1} position={[-2.93, 4.9, -3.84]} rotation={[0.22, -1.51, 0.22]} />
       <directionalLight castShadow shadow-mapSize-height={1} shadow-bias={-0.000001} shadow-mapSize-width={1} intensity={1} decay={2} color="#70ffff" position={[0.16, 9.89, -0.25]} rotation={[-1.52, -0.12, 0.66]} scale={1.64} />
       <directionalLight castShadow shadow-mapSize={[1024,1024]} shadow-bias={-0.0000001} intensity={2}  decay={2} color="#70ffff" position={[0.53, 10.03, .37]} rotation={[-0.09, 0, 0]} scale={1.64} />
       {/*<pointLight  castShadow shadow-mapSize-height={1} shadow-mapSize-width={1} intensity={.4} decay={2} color="#ff2a03" position={[-0.05, 7.73, 1.22]} rotation={[-Math.PI / 2, 0, 0]} />*/}
@@ -281,7 +281,7 @@ export default function Model(props) {
       <mesh castShadow receiveShadow geometry={nodes.Cube142.geometry} material={materials['Material.006']} position={[0.95, 0.26, -11.38]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={[0.03, 0.02, 0.03]} />
       <mesh castShadow receiveShadow geometry={nodes.Cube141.geometry} material={materials['Material.007']} position={[-2.54, 0.26, -12.28]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={[0.04, 0.03, 0.04]} />
       <mesh castShadow receiveShadow geometry={nodes.Cube140.geometry} material={materials['Material.006']} position={[-3.51, 0.26, -13.03]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={[0.06, 0.04, 0.06]} />
-      <mesh receiveShadow geometry={nodes.Plane003.geometry} material={materials['Material.009']} position={[0.21, 0.26, -0.33]} scale={12.98} />
+        <mesh receiveShadow geometry={nodes.Plane003.geometry}  material={materials['Material.009']} position={[0.21, 0.26, -0.33]} scale={12.98}/>
       <mesh castShadow receiveShadow geometry={nodes.Plane002.geometry} material={materials['Material.001']} position={[0.21, 0.26, -0.33]} scale={12.98} />
       <mesh castShadow receiveShadow geometry={nodes.Plane001.geometry} material={materials['Material.002']} position={[0.21, 0.2, -0.33]} scale={12.98} />
       <mesh receiveShadow geometry={nodes.Plane.geometry} material={materials['Material.001']} position={[0.21, 0.26, -0.33]} scale={12.98}>
