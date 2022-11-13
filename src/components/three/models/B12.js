@@ -26,7 +26,6 @@ export default function Model(props) {
     let oldObjY = 3.56
     let oldObjZ = -2.44
     useFrame((state) => {
-
         targetObj.visible = false
         targetObj.position.x = oldObjX - -state.mouse.x
         targetObj.position.z = oldObjZ -  -state.mouse.x*2
@@ -54,7 +53,7 @@ export default function Model(props) {
                                 <group name="Object_4">
                                     <mesh name="Object_0" target={targetObj} castShadow receiveShadow geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
                                     <mesh name="Object_0_1"target={targetObj}  castShadow receiveShadow geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
-                                    <SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={0.35}  anglePower={5} attenuation={props.Light} intensity={props.Light} penumbra={1} decay={2} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>
+                                    <SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={0.35}  anglePower={15} attenuation={props.Light} intensity={props.Light} penumbra={1} decay={2} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>
                                         <group position={[0, 0, -1]} />
                                     </SpotLight>
                                 </group>

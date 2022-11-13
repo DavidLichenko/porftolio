@@ -1,7 +1,7 @@
 
 import React, { useRef,useState } from "react";
 import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
-import { Effects, OrbitControls, OrthographicCamera } from '@react-three/drei'
+import { Effects, BakeShadows, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { UnrealBloomPass } from 'three-stdlib'
 import './App.css'
 import B12 from './components/three/models/B12'
@@ -16,12 +16,11 @@ function CameraController()  {
 
     const { camera, scene } = useThree();
     const object = scene.getObjectByName("B12")
-    console.log(object)
     useFrame(state => {
-        let changeX = state.mouse.x - 18;
-        let changeY = state.mouse.y + 6;
-        camera.position.z = changeX/5
-        camera.position.y = changeY/5
+        let changeX = state.mouse.x - 30;
+        let changeY = state.mouse.y + 9;
+        camera.position.z = changeX/8
+        camera.position.y = changeY/8
         object.rotation.x = -1.5707963267948966 + -state.mouse.y/4
         object.rotation.y = -state.mouse.y/2
         object.rotation.z = -3.141592653589793 + -state.mouse.x/2
@@ -52,7 +51,9 @@ export default function App() {
                     onClick={(e) => {
                         setLight(Light ? 0 : 8)
                     }}
-                    shadows dpr={[1,2]} gl={{ antialias: false }}>
+                    dpr={[1, 1.5]}
+                    gl={{toneMappingExposure: .4}}
+                    shadows>
                     <CameraController/>
                     {/*<color attach="background" args={['#d08b8b']} />*/}
                     <fog attach="fog" args={['#006477', 0, 30]} />
@@ -61,6 +62,7 @@ export default function App() {
                     <ambientLight intensity={0.05} />
                     <Ruin/>
                     {/*<Box color="black" position={[-2, 2, 18]} />*/}
+                    <BakeShadows/>
                     <Text/>
                     {/*<directionalLight intensity={1}  position={[10, 10, -10]} />*/}
                     {/*<Effects >*/}
