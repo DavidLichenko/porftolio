@@ -47,17 +47,19 @@ export default function Model(props) {
         // </group>
         <group ref={group} {...props} dispose={null} position={[-1, 1.08, -3.05]}>
             <group name="Scene">
-                <group name="B12"  rotation={[-Math.PI / 2, 0, -Math.PI]} scale={4}>
+                <group rotation={[-Math.PI / 2, 0 , Math.PI]} scale={4}>
                     <group name="root">
-                        <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, -Math.PI / 2, 0]}>
+                        <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 1, 3.14]}>
                             <group name="Drone_StaticMesh_0">
-                                <group name="Object_4">
-                                    <mesh name="Object_0" castShadow lookAt={targetObj} receiveShadow geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
-                                    <mesh name="Object_0_1" castShadow lookAt={targetObj} receiveShadow geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
-                                    <SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={.30}  anglePower={15} attenuation={props.Light} intensity={props.Light} penumbra={.7} decay={1.4} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>
-                                        <group position={[0, 0, -1]} />
-                                    </SpotLight>
+                                <group name="B12" rotation={[Math.PI,Math.PI , 0]}>
+                                    <mesh name="Object_0" castShadow receiveShadow geometry={nodes.Object_0.geometry} material={materials.M_Drone} />
+                                    <mesh name="Object_0_1"  receiveShadow geometry={nodes.Object_0_1.geometry} material={materials.M_eye_drone_Inst} />
+                                    {/*<SpotLight name="Spot"  castShadow target={targetObj} distance={40} angle={.30}  anglePower={15} attenuation={props.Light} intensity={props.Light} penumbra={.7} decay={1.4} position={[0, 0.01, 0.04]} rotation={[Math.PI, 0, 0]} scale={0.09}>*/}
+                                    {/*    <group position={[0, 0, -1]} />*/}
+                                    {/*</SpotLight>*/}
                                 </group>
+                                <spotLight castShadow intensity={.9}  position={[1, 1, 0]} penumbra={1}/>
+                                <spotLight castShadow intensity={.9} position={[-1, 1, 0]} penumbra={1}/>
                             </group>
                         </group>
                     </group>

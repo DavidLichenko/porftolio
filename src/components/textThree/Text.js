@@ -8,7 +8,7 @@ export default function Texts(props) {
     const Texts = () => {
         const textRef = useRef();
         useFrame(() => {
-            textRef.current.position.y = 4.56 + props.Scroll;
+            textRef.current.position.y = -1 + props.Scroll;
         });
         let text = `
 Hi, my name is David Lichenko.
@@ -45,7 +45,7 @@ I’ve left fuckers from Taburetka.
             //     Hello world!
             //     <meshStandardMaterial color="#700000" />
             // </Text3D>
-            <Text receiveShadow ref={textRef} position={[6.85,4.56,-2.44]} fontSize={.3} rotation={[0,-Math.PI/2,0]} font={orbitron} characters="abcdefghijklmnopqrstuvwxyz0123456789!">
+            <Text receiveShadow ref={textRef} position={[6.85,-1,-2.44]} fontSize={.3} rotation={[0,-Math.PI/2,0]} font={orbitron} characters="abcdefghijklmnopqrstuvwxyz0123456789!">
                {text}
                 <meshStandardMaterial color="#700000" clearcoat={0.01} roughness={0.2} metalness={1} />
             </Text>
