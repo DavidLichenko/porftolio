@@ -1,0 +1,52 @@
+
+
+.main-header {
+  position: relative;
+  .layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    .layer {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      z-index: 2;
+      transition: var(--transition);
+    }
+    .layer__base {
+      background-image: url("../../../assets/png/strayBackround.jpg");
+      transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
+      z-index: 0;
+    }
+    .layer__middle {
+      background-image: url("../../../assets/png/strayFrontSide.png");
+    }
+    .layer__header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
+      will-change: transform;
+      font-weight: 900;
+      margin-top: calc(var(--index) * -7 );
+      transition: var(--transition);
+      z-index: 1;
+      .layer__caption {
+        font-size: calc(var(--index) * 5 );
+        letter-spacing: calc(var(--index)/2.5);
+        text-shadow: 0 0 20px #ff681a;
+      }
+      .layer__tittle {
+        font-size: calc(var(--index)/1.25);
+        font-weight: 600;
+      }
+    }
+
+  }
+}

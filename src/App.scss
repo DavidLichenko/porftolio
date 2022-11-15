@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --text: #fff9e9;
+  --second-text: #302319;
+  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text);
+}
+.content {
+  will-change: transform;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,60 @@
+:root {
+  --border: 5px solid #E89700;
+}
+
+.dialog__container {
+  display: flex;
+  justify-content: center;
+  height: calc(var(--index) * 15);
+  width: calc(var(--index) * 28);
+  background: url("../../../../src/assets/png/texture/dialog__containerTexture.jpg");
+  background-blend-mode: darken;
+  background-size: 2px 50px;
+  background-color: #15252c;
+  mix-blend-mode: darken;
+  backdrop-filter: blur(50px) opacity(100%);
+  border-bottom: var(--border);
+  border-radius: 1px;
+  .dialog__content {
+    min-width: 100%;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-image: linear-gradient(to top, #E89700 1%, transparent 1%) 1;
+  }
+  .dialog__border__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(var(--index) * 2.5);
+    background-image: url("../../../../src/assets/png/texture/speaker__nameTexture.png");
+    background-size: cover;
+    margin: 4px;
+    padding: 0 calc(var(--index)*1.2);
+    top: 4px;
+    border-radius: 5px;
+    position: relative;
+    & > img {
+      width: calc(var(--index)*1.2);
+      transform: translateY(3px);
+    }
+    .speaker__name {
+      font-weight: 700;
+      font-size: calc(var(--index)*1.2);
+      color: #302319;
+      letter-spacing: 0.13em;
+    }
+  }
+}
+.speaker__name {
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+.speaker__text {
+  font-family: 'Oxanium', cursive;
+  font-weight: 500;
+  font-size: calc(var(--index)*1.2);
+  line-height: calc(var(--index)*1.4);
+  max-width: calc(var(--index)*27);
+  text-align: left;
+  margin: var(--index);
+}
