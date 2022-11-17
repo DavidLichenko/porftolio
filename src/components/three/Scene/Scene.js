@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import React, {Suspense, useState, useEffect, useRef, useCallback} from 'react'
 import {Canvas, extend, useFrame, useThree} from "react-three-fiber";
 import { UnrealBloomPass } from 'three-stdlib'
-import {AdaptiveDpr, Html, useProgress, PerspectiveCamera, OrbitControls} from "@react-three/drei";
+import {AdaptiveDpr, Html, PerspectiveCamera, Loader, OrbitControls} from "@react-three/drei";
 import B12 from "../models/B12";
 import Ruin from "../models/RobotInRuinScene";
 import './Scene.scss'
@@ -19,32 +19,19 @@ export default function Scene(props){
             document.getElementById("CanvasSection").addEventListener("mousemove", MouseMove);
         }
         return () => {
-            document.getElementById("CanvasSection").removeEventListener("mousemove", MouseMove);}
+            document.getElementById("CanvasSection").removeEventListener("mousemove", MouseMove);
+        }
     }, []);
     function MouseMove(e) {
         cameraRef.current.position.z = -3.84 + -e.clientX / window.innerWidth/6
     }
 
-    // function Rig() {
-    //     const [vec] = useState(() => new THREE.Vector3())
-    //     const { camera, mouse } = useThree()
-    //     useFrame(()=> {
-    //
-    //         camera.position.lerp(vec.set(-2.93 , 1.2 + mouse.y/100, -3.84 + mouse.x/100 ), 0.05)
-    //     })
-    // }
-
-
-
-    function Loader() {
-        const { progress } = useProgress()
-        return <Html center>{progress} % loaded</Html>
-    }
 
     // const [Light,setLight] = useState(0)
     // let [Scroll,setScroll] = useState(0)
     return (
-        <section id="CanvasSection">
+
+        <section id="CanvasSection" >
             <Canvas
                 // onClick={(e) => {
                 //     setLight(Light ? 0 : 20)
@@ -53,9 +40,9 @@ export default function Scene(props){
                 dpr={[0, 1]}
                 gl={{toneMappingExposure: .4}}
                 shadows>
-                <Suspense fallback={<Loader />}>
+                <Suspense fallback={null}>
                     <mesh position={[3.85,3.56,-8.44]}>
-                        <Html className="msg_div" style={{ pointerEvents: 'none' }} zIndexRange={[1, 0]}>
+                        <Html className="msg_div"  zIndexRange={[1, 0]}>
                             <DialogDiv  />
                         </Html>
                     </mesh>
@@ -71,6 +58,7 @@ export default function Scene(props){
                     {/*<OrbitControls/>*/}
                 </Suspense>
             </Canvas>
+            <Loader/>
         </section>
     )
 }

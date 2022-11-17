@@ -34,7 +34,7 @@
       transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
       will-change: transform;
       font-weight: 900;
-      margin-top: calc(var(--index) * -7 );
+      margin-top: calc(var(--index) * -5 );
       transition: var(--transition);
       z-index: 1;
       .layer__caption {

@@ -1,48 +1,34 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, {useEffect, useRef,useState} from 'react'
 import Greetings from "./components/sections/Greetings/Greetings";
 import Scene from './components/three/Scene/Scene'
-import { gsap } from "gsap-trial";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import LocomotiveScroll from "locomotive-scroll";
+import 'locomotive-scroll/src/locomotive-scroll.scss'
 import './App.scss'
 
 
 const App = () =>  {
-    const el = useRef();
-    const q = gsap.utils.selector(el);
 
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-    useLayoutEffect(() => {
-        let smoother = ScrollSmoother.create({
-            smooth: 1,
-            wrapper: '.wrapper',
-            content: '.content',
-            effects: true
-        });
-        return () => {
-            smoother.kill();
-        };
-    }, []);
+    const [isLoading, setIsLoading] = useState(true)
 
-    //ParallaxEffect
     useEffect(() => {
-        window.addEventListener('scroll', e => {
-            document.documentElement.style.setProperty('--scrollTop', `${window.scrollY}px`)
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            mobileSmooth: true,
+            lerp: .09,
+            multiplier: 1.2
         });
-        // cleanup this component
-        return () => {
-            window.removeEventListener('scroll', e => {
-                document.documentElement.style.setProperty('--scrollTop', `${window.scrollY}px`)
-            });
-        };
+        setTimeout(()=>{
+            setIsLoading(false)
+        },3000)
     }, []);
 
     return (
-        <div ref={el} className="wrapper">
+        <div data-scroll-container className='wrapper' >
+            <div className={ isLoading ? 'LoaderBox' : 'empty'}></div>
             <div className="content">
                 <Greetings/>
-                {/*<div>App</div>*/}
-                <Scene/>
+                <Scene />
             </div>
         </div>
     )

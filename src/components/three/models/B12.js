@@ -10,14 +10,15 @@ import {useFrame, useThree} from "react-three-fiber";
 export default function Model(props) {
     const group = useRef()
     const refB12 = useRef()
-    const { nodes, materials, animations } = useGLTF('../../../../b12.gltf')
+    const { nodes, materials, animations } = useGLTF('./b12.gltf')
 
     useEffect(() => {
         if (window.innerWidth > 768) {
             document.getElementById("CanvasSection").addEventListener("mousemove", MouseMove);
         }
         return () => {
-            document.getElementById("CanvasSection").removeEventListener("mousemove", MouseMove);}
+            // document.getElementById("CanvasSection").removeEventListener("mousemove", MouseMove);
+        }
     }, []);
     function MouseMove(e) {
         refB12.current.rotation.x = -Math.PI*-1.1 + -e.clientY / window.innerHeight/2
@@ -60,4 +61,4 @@ export default function Model(props) {
 }
 
 
-useGLTF.preload('../../../../b12.gltf')
+useGLTF.preload('./b12.gltf')

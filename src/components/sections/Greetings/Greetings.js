@@ -7,11 +7,11 @@ const Greetings = () => {
         <section className="wrapper">
             <header className="main-header">
                 <div className="layers">
-                    <div className="layer__header">
-                        <div className="layer__caption">David Lichenko</div>
+                    <div className="layer__header" data-scroll data-scroll-delay="1.5" data-scroll-speed="2">
+                        <div className="layer__caption" >David Lichenko</div>
                         <div className="layer__tittle">Web Designer, Developer</div>
                     </div>
-                    <div className="layer layer__base"></div>
+                    <div className="layer layer__base" data-scroll data-scroll-speed="-7"></div>
                     <div className="layer layer__middle"></div>
                 </div>
             </header>

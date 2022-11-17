@@ -6,7 +6,7 @@ import React from 'react'
 import { useGLTF, PerspectiveCamera } from '@react-three/drei'
 
 export default function Model(props) {
-    const { nodes, materials } = useGLTF('../../../../robotInRuinScene.gltf')
+    const { nodes, materials } = useGLTF('./robotInRuinScene.gltf')
     return (
         <group {...props} dispose={null}>
             <group position={[0, 0.5, -2.62]} scale={1.15}>
@@ -756,4 +756,4 @@ export default function Model(props) {
     )
 }
 
-useGLTF.preload('../../../../robotInRuinScene.gltf')
+useGLTF.preload('./robotInRuinScene.gltf')

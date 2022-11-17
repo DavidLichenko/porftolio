@@ -3,21 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+.LoaderBox {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  left: 0;
+  top: 0;
+  z-index: 111111;
+}
 :root {
   --index: calc(1vw + 1vh);
   --text: #fff9e9;
   --second-text: #302319;
-  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+  --scrollTop:0;
+  --transition: transform .55s cubic-bezier(.075, .5, 0, 1);
 }
 body {
   font-family: 'Orbitron', sans-serif;
   color: var(--text);
+  .has-scroll-smooth & {
+    overflow: hidden;
+  }
 }
 .content {
   will-change: transform;
 }
-
-.wrapper {
+.c-scrollbar {
+  position: fixed
+}
+section {
   min-height: 100%;
   width: 100%;
+  will-change: transform;
 }
+//html {
+//  &.has-scroll-smooth {
+//    overflow: hidden;
+//  }
+//}
