@@ -25,16 +25,18 @@
       z-index: 0;
     }
     .layer__middle {
-      background-image: url("../../../assets/png/strayFrontSide.png");
+      background-image: url("../../../assets/png/strayFrontSide — копия.png");
+      //background-size: auto;
+      //background-repeat: no-repeat;
+      //transform: translateY(calc(var(--index)*3.8));
     }
     .layer__header {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
       will-change: transform;
       font-weight: 900;
-      margin-top: calc(var(--index) * -5 );
+      padding-bottom: calc(var(--index) * 10 );
       transition: var(--transition);
       z-index: 1;
       .layer__caption {

@@ -1,8 +1,10 @@
 import React from 'react'
+import './Skills.scss'
+
 
 const Skills = () => {
     return (
-        <section>
+        <section className="skills__section">
             Skills
         </section>
     )
