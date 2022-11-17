@@ -20,7 +20,7 @@ const App = () =>  {
         });
         setTimeout(()=>{
             setIsLoading(false)
-        },3000)
+        },10000)
     }, []);
 
     return (
