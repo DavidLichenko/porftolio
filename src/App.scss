@@ -3,28 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-.LoaderBox {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: black;
-  left: 0;
-  top: 0;
-  z-index: 111111;
-}
+
 :root {
   --index: calc(1vw + 1vh);
   --text: #fff9e9;
   --second-text: #302319;
+  --background: #272727;
   --scrollTop:0;
   --transition: transform .55s cubic-bezier(.075, .5, 0, 1);
 }
 body {
   font-family: 'Orbitron', sans-serif;
+  background-color:var(--background);
   color: var(--text);
-  .has-scroll-smooth & {
-    overflow: hidden;
-  }
 }
 .content {
   will-change: transform;
@@ -33,7 +24,7 @@ body {
   position: fixed
 }
 section {
-  min-height: 100%;
+  height: 100vh;
   width: 100%;
   will-change: transform;
 }

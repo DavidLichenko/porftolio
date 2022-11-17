@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://davidlichenko.github.io/porftolio/",
   "dependencies": {
+    "@react-spring/web": "^9.5.5",
     "@react-three/drei": "^9.40.0",
     "@react-three/postprocessing": "^2.7.0",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,8 +1,9 @@
 import * as THREE from 'three'
 import React, {Suspense, useState, useEffect, useRef, useCallback} from 'react'
+import { a, useTransition } from "@react-spring/web";
 import {Canvas, extend, useFrame, useThree} from "react-three-fiber";
 import { UnrealBloomPass } from 'three-stdlib'
-import {AdaptiveDpr, Html, PerspectiveCamera, Loader, OrbitControls} from "@react-three/drei";
+import {AdaptiveDpr, Html, PerspectiveCamera, useProgress, BakeShadows, Preload} from "@react-three/drei";
 import B12 from "../models/B12";
 import Ruin from "../models/RobotInRuinScene";
 import './Scene.scss'
@@ -13,7 +14,7 @@ extend({ UnrealBloomPass })
 export default function Scene(props){
 
     const cameraRef = useRef()
-
+    // const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
         if (window.innerWidth > 768) {
             document.getElementById("CanvasSection").addEventListener("mousemove", MouseMove);
@@ -26,12 +27,32 @@ export default function Scene(props){
         cameraRef.current.position.z = -3.84 + -e.clientX / window.innerWidth/6
     }
 
+    function Loader() {
+        const { active, progress } = useProgress();
+        const transition = useTransition(active, {
+            from: { opacity: 1.6, progress: 0 },
+            leave: { opacity: 0 },
+            update: { progress },
+        });
+        return transition(
+            ({ progress, opacity }, active) =>
+                active && (
+                    <a.div className='loading' style={{ opacity }}>
+                        <div className='loading-bar-container'>
+                            <a.div className='loading-bar' style={{ width: progress }}></a.div>
+                        </div>
+                    </a.div>
+                )
+        );
+    }
+
 
     // const [Light,setLight] = useState(0)
     // let [Scroll,setScroll] = useState(0)
     return (
 
-        <section id="CanvasSection" >
+        <div id="CanvasSection">
+
             <Canvas
                 // onClick={(e) => {
                 //     setLight(Light ? 0 : 20)
@@ -49,7 +70,8 @@ export default function Scene(props){
                     {/*<Rig/>*/}
                     <B12/>
                     <Ruin/>
-
+                    <Preload all />
+                    <BakeShadows />
                     <fog attach="fog" args={['#006477', 0, 30]} />
                     <hemisphereLight intensity={.2} color="#ffffff" groundColor="black" />
                     <ambientLight intensity={0.05} />
@@ -58,7 +80,7 @@ export default function Scene(props){
                     {/*<OrbitControls/>*/}
                 </Suspense>
             </Canvas>
-            <Loader/>
-        </section>
+            <Loader />
+        </div>
     )
 }
