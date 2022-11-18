@@ -14,15 +14,14 @@ const App = () =>  {
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
             mobileSmooth: true,
-            lerp: .09,
-            multiplier: 1.2
+            multiplier: 1
         });
     }, []);
     return (
-        <div data-scroll-container className='wrapper' >
-            <div className="content">
+        <div className='wrapper' >
+            <div data-scroll-container className="content">
                 <Greetings />
-                <Scene />
+                {/*<Scene />*/}
                 <Skills />
                 <Contacts />
             </div>

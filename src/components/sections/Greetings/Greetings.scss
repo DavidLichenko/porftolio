@@ -21,11 +21,13 @@
     }
     .layer__base {
       background-image: url("../../../assets/png/strayBackround.jpg");
-      transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
+      will-change: transform;
       z-index: 0;
     }
     .layer__middle {
       background-image: url("../../../assets/png/strayFrontSide — копия.png");
+      will-change: transform;
+
       //background-size: auto;
       //background-repeat: no-repeat;
       //transform: translateY(calc(var(--index)*3.8));
@@ -35,6 +37,7 @@
       flex-direction: column;
       align-items: flex-end;
       will-change: transform;
+
       font-weight: 900;
       padding-bottom: calc(var(--index) * 10 );
       transition: var(--transition);
