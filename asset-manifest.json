@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/porftolio/static/css/main.8237b26e.css",
-    "main.js": "/porftolio/static/js/main.29122eb1.js",
+    "main.css": "/porftolio/static/css/main.a3ad1108.css",
+    "main.js": "/porftolio/static/js/main.190ff788.js",
     "static/media/strayFrontSide — копия.png": "/porftolio/static/media/strayFrontSide — копия.0078688c6b63c4d3c138.png",
     "static/media/dialog__containerTexture.jpg": "/porftolio/static/media/dialog__containerTexture.e446a806d25e825c7035.jpg",
     "static/media/strayBackround.jpg": "/porftolio/static/media/strayBackround.1bf35bbf58093ebee611.jpg",
     "static/media/speaker__nameTexture.png": "/porftolio/static/media/speaker__nameTexture.c25c92f282d68dd2aa4d.png",
     "index.html": "/porftolio/index.html",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
-    "main.8237b26e.css.map": "/porftolio/static/css/main.8237b26e.css.map",
-    "main.29122eb1.js.map": "/porftolio/static/js/main.29122eb1.js.map"
+    "main.a3ad1108.css.map": "/porftolio/static/css/main.a3ad1108.css.map",
+    "main.190ff788.js.map": "/porftolio/static/js/main.190ff788.js.map"
   },
   "entrypoints": [
-    "static/css/main.8237b26e.css",
-    "static/js/main.29122eb1.js"
+    "static/css/main.a3ad1108.css",
+    "static/js/main.190ff788.js"
   ]
 }
