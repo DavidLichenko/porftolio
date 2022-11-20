@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/porftolio/static/css/main.a3ad1108.css",
-    "main.js": "/porftolio/static/js/main.190ff788.js",
-    "static/media/strayFrontSide — копия.png": "/porftolio/static/media/strayFrontSide — копия.0078688c6b63c4d3c138.png",
-    "static/media/dialog__containerTexture.jpg": "/porftolio/static/media/dialog__containerTexture.e446a806d25e825c7035.jpg",
-    "static/media/strayBackround.jpg": "/porftolio/static/media/strayBackround.1bf35bbf58093ebee611.jpg",
+    "main.css": "/porftolio/static/css/main.264b72e0.css",
+    "main.js": "/porftolio/static/js/main.8d4738db.js",
+    "static/media/stayBackgroundPartTwo.png": "/porftolio/static/media/stayBackgroundPartTwo.342daba2e0a6b9f511ab.png",
+    "static/media/sectionTwoBackground.jpg": "/porftolio/static/media/sectionTwoBackground.ca7f1672fd80f089c8a5.jpg",
+    "static/media/strayFrontSide.png": "/porftolio/static/media/strayFrontSide.64b8a97e80e8422a7d22.png",
     "static/media/speaker__nameTexture.png": "/porftolio/static/media/speaker__nameTexture.c25c92f282d68dd2aa4d.png",
     "index.html": "/porftolio/index.html",
+    "static/media/pin.svg": "/porftolio/static/media/pin.78c9d25fcc20d67d6c6e.svg",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
-    "main.a3ad1108.css.map": "/porftolio/static/css/main.a3ad1108.css.map",
-    "main.190ff788.js.map": "/porftolio/static/js/main.190ff788.js.map"
+    "main.264b72e0.css.map": "/porftolio/static/css/main.264b72e0.css.map",
+    "main.8d4738db.js.map": "/porftolio/static/js/main.8d4738db.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3ad1108.css",
-    "static/js/main.190ff788.js"
+    "static/css/main.264b72e0.css",
+    "static/js/main.8d4738db.js"
   ]
 }
