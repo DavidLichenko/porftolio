@@ -17,6 +17,11 @@ body {
   background-color:var(--background);
   color: var(--text);
 }
+[data-scroll-container] {
+  .has-scroll-smooth & {
+    overflow-y: clip !important;
+  }
+}
 .content {
   will-change: transform;
 }

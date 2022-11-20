@@ -2,6 +2,21 @@
 
 .main-header {
   position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    height: calc(var(--index) * 1);
+    bottom: calc(var(--index) * -0.5);
+    z-index: 100;
+    transform: scaleX(1.5);
+    width: 100%;
+    background: linear-gradient(0deg, rgb(18 14 14) 87%, rgb(0 0 0 / 1) 100%);
+    background-size: cover;
+    filter: blur(6px);
+    -webkit-backdrop-filter: blur(1.5);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .layers {
     height: 100vh;
     display: flex;
@@ -20,14 +35,16 @@
       transition: var(--transition);
     }
     .layer__base {
-      background-image: url("../../../assets/png/strayBackround.jpg");
-      transform: translate3d(0, calc( var(--scrollTop) / 2) ,0);
+      background-image: url("../../../assets/png/stayBackgroundPartTwo.png");
+      background-position: 0 calc(var(--index)/15);
+      background-repeat: no-repeat;
       z-index: 0;
     }
     .layer__middle {
-      background-image: url("../../../assets/png/strayFrontSide — копия.png");
-      //background-size: auto;
-      //background-repeat: no-repeat;
+      background-image: url("../../../assets/png/strayFrontSide.png");
+      background-size: auto;
+      background-repeat: no-repeat;
+      bottom: 0;
       //transform: translateY(calc(var(--index)*3.8));
     }
     .layer__header {

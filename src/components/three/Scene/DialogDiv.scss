@@ -7,12 +7,10 @@
   justify-content: center;
   height: calc(var(--index) * 15);
   width: calc(var(--index) * 28);
-  background: url("../../../../src/assets/png/texture/dialog__containerTexture.jpg");
   background-blend-mode: darken;
   background-size: 2px 50px;
-  background-color: #15252c;
+  background-color: rgba(21,37,44,.8);
   mix-blend-mode: darken;
-  backdrop-filter: blur(50px) opacity(100%);
   border-bottom: var(--border);
   border-radius: 1px;
   .dialog__content {

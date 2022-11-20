@@ -5,8 +5,8 @@ canvas {
 }
 .loading {
   position: absolute!important;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: #171717;
@@ -26,4 +26,9 @@ canvas {
 .loading-bar {
   height: 32px;
   background: #9d4008;
+}
+#CanvasSection {
+background:linear-gradient(0deg, rgb(39, 39, 39, 1) 5%, rgba(255, 255, 255, 0) 100%), url("../../../assets/png/sectionTwoBackground.jpg") no-repeat 50% 50%
+
+  //background-repeat: no-repeat;
 }
