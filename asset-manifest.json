@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/porftolio/static/css/main.64bc92a9.css",
-    "main.js": "/porftolio/static/js/main.46025de2.js",
+    "main.js": "/porftolio/static/js/main.6cc1392c.js",
     "static/media/stayBackgroundPartTwo.png": "/porftolio/static/media/stayBackgroundPartTwo.342daba2e0a6b9f511ab.png",
     "static/media/sectionTwoBackground.jpg": "/porftolio/static/media/sectionTwoBackground.ca7f1672fd80f089c8a5.jpg",
     "static/media/strayFrontSide.png": "/porftolio/static/media/strayFrontSide.64b8a97e80e8422a7d22.png",
@@ -13,10 +13,10 @@
     "static/media/pin.svg": "/porftolio/static/media/pin.78c9d25fcc20d67d6c6e.svg",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
     "main.64bc92a9.css.map": "/porftolio/static/css/main.64bc92a9.css.map",
-    "main.46025de2.js.map": "/porftolio/static/js/main.46025de2.js.map"
+    "main.6cc1392c.js.map": "/porftolio/static/js/main.6cc1392c.js.map"
   },
   "entrypoints": [
     "static/css/main.64bc92a9.css",
-    "static/js/main.46025de2.js"
+    "static/js/main.6cc1392c.js"
   ]
 }
