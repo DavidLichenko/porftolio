@@ -55,6 +55,7 @@
       font-weight: 900;
       padding-bottom: calc(var(--index) * 10 );
       transition: var(--transition);
+      //transform: translateY();
       z-index: 1;
       .layer__caption {
         font-size: calc(var(--index) * 5 );

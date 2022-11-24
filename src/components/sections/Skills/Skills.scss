@@ -11,26 +11,65 @@
     width: 100%;
     justify-items: start;
     background: linear-gradient(0deg, rgb(39, 39, 39) 0%, rgba(255, 255, 255, 0) 45%);
-    .skill_box {
+    .skill_container {
       display: flex;
       align-items: center;
       justify-items: center;
       flex-direction: column;
     }
     .skill {
-      width: calc(var(--index)*15);
-      height: calc(var(--index)*1);
-      margin: calc(var(--index) * 0.9) auto;
-      position: relative;
       display: inline-block;
-      background-color:var(--background);
-      border: 1px solid saddlebrown;
+      position: relative;
+      width: calc(var(--index) * 18);
+      height: calc(var(--index) * 1);
+      margin: calc(var(--index) * 0.9) auto;
+      background-size: contain;
+      z-index: 12;
       border-radius: 10px;
       .skill_progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        background-color:#ff681a;
+        width: 100%;
+        //background:#ff681a ;
         border: 1px solid var(--background);
-        border-radius: 5px;
+        z-index: 1;
+        .skill_value {
+          position: absolute;
+          font-family: 'Oxanium', cursive;
+          font-size: calc(var(--index) * 0.5);
+          transition: opacity 0.1s linear;
+          text-align: center;
+          opacity: 0;
+        }
+        .skill_progress_boxes {
+          display: flex;
+          justify-content: flex-start;
+          margin: 0 auto;
+          align-items: center;
+          gap: 0 4px;
+          width: 100%;
+          height: 100%;
+
+          div {
+            border: 1px solid #959490;
+            border-radius: 5px;
+            height: calc(var(--index) * 1);
+            background-color: #363633;
+            box-shadow: inset 0px 0px 25px 3px rgb(0 0 0 / 50%);
+            width: calc(var(--index) * 5);
+          }
+          .filled {
+            background-color: #ff5900;
+            box-shadow: inset 0px 0px 15px 1px rgb(0 0 0 / 50%);
+          }
+        }
+      }
+      &:hover {
+        .skill_value {
+          opacity: 1;
+        }
       }
     }
     .skill_name {

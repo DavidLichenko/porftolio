@@ -2,5 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
+  width: 100%;
+  .layers {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    .layer {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+    .contacts__layer__base {
+      background: url("../../../assets/png/contactsBackground_0.jpg") 50% 50%;
+    }
+
+    .contacts__layer__middle {
+      background: url("../../../assets/png/contactsLayer_2.png") 50% 50%;
+      z-index: 2;
+    }
+
+    .contacts__layer__eye {
+      background: url("../../../assets/png/contactsLayer_1.png") 50% 50%;
+      z-index: 1;
+    }
+  }
 }
