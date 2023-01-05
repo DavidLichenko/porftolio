@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "/porftolio/static/css/main.64bc92a9.css",
-    "main.js": "/porftolio/static/js/main.6cc1392c.js",
-    "static/media/stayBackgroundPartTwo.png": "/porftolio/static/media/stayBackgroundPartTwo.342daba2e0a6b9f511ab.png",
+    "main.css": "/porftolio/static/css/main.dbff548d.css",
+    "main.js": "/porftolio/static/js/main.17357d0b.js",
+    "static/media/Empty.png": "/porftolio/static/media/Empty.67d19fdc06c20b2a3598.png",
     "static/media/sectionTwoBackground.jpg": "/porftolio/static/media/sectionTwoBackground.ca7f1672fd80f089c8a5.jpg",
     "static/media/strayFrontSide.png": "/porftolio/static/media/strayFrontSide.64b8a97e80e8422a7d22.png",
     "static/media/contactsBackground_0.jpg": "/porftolio/static/media/contactsBackground_0.c2de05f99b3305745e29.jpg",
+    "static/media/strayBackround.jpg": "/porftolio/static/media/strayBackround.1bf35bbf58093ebee611.jpg",
+    "static/media/nftSite.png": "/porftolio/static/media/nftSite.320821b8e3b09fd34916.png",
+    "static/media/zurk3.png": "/porftolio/static/media/zurk3.83d37e015c40287d908e.png",
     "static/media/contactsLayer_1.png": "/porftolio/static/media/contactsLayer_1.081f09ce09fdab752888.png",
+    "static/media/zurk1.png": "/porftolio/static/media/zurk1.61ca91389fa158eaa1e5.png",
     "static/media/speaker__nameTexture.png": "/porftolio/static/media/speaker__nameTexture.c25c92f282d68dd2aa4d.png",
+    "static/media/zurk2.png": "/porftolio/static/media/zurk2.d86e46a71403d78cb073.png",
+    "static/media/zurk5.png": "/porftolio/static/media/zurk5.1dde7c0482bb2670481e.png",
+    "static/media/zurk4.png": "/porftolio/static/media/zurk4.5e66fd1deaaa6093b334.png",
     "static/media/contactsLayer_2.png": "/porftolio/static/media/contactsLayer_2.a8c8cb5b6910187e808f.png",
+    "static/media/return.svg": "/porftolio/static/media/return.d4025ced485738332a0a3e4b872bd546.svg",
     "index.html": "/porftolio/index.html",
+    "static/media/next.svg": "/porftolio/static/media/next.335f50be42b29c2189df1ead1308813a.svg",
     "static/media/pin.svg": "/porftolio/static/media/pin.78c9d25fcc20d67d6c6e.svg",
+    "static/media/nextReturnIcon.svg": "/porftolio/static/media/nextReturnIcon.b228d74620365608294746ef241adf52.svg",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
-    "main.64bc92a9.css.map": "/porftolio/static/css/main.64bc92a9.css.map",
-    "main.6cc1392c.js.map": "/porftolio/static/js/main.6cc1392c.js.map"
+    "main.dbff548d.css.map": "/porftolio/static/css/main.dbff548d.css.map",
+    "main.17357d0b.js.map": "/porftolio/static/js/main.17357d0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.64bc92a9.css",
-    "static/js/main.6cc1392c.js"
+    "static/css/main.dbff548d.css",
+    "static/js/main.17357d0b.js"
   ]
 }
