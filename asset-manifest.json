@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/porftolio/static/css/main.dbff548d.css",
-    "main.js": "/porftolio/static/js/main.b376b68f.js",
+    "main.css": "/porftolio/static/css/main.e155db9a.css",
+    "main.js": "/porftolio/static/js/main.13bde0f4.js",
     "static/media/Empty.png": "/porftolio/static/media/Empty.67d19fdc06c20b2a3598.png",
     "static/media/sectionTwoBackground.jpg": "/porftolio/static/media/sectionTwoBackground.ca7f1672fd80f089c8a5.jpg",
     "static/media/strayFrontSide.png": "/porftolio/static/media/strayFrontSide.64b8a97e80e8422a7d22.png",
     "static/media/contactsBackground_0.jpg": "/porftolio/static/media/contactsBackground_0.c2de05f99b3305745e29.jpg",
     "static/media/strayBackround.jpg": "/porftolio/static/media/strayBackround.1bf35bbf58093ebee611.jpg",
     "static/media/nftSite.png": "/porftolio/static/media/nftSite.320821b8e3b09fd34916.png",
+    "static/media/contactsLinear.png": "/porftolio/static/media/contactsLinear.51814d5bceca833b3154.png",
     "static/media/zurk3.png": "/porftolio/static/media/zurk3.83d37e015c40287d908e.png",
     "static/media/contactsLayer_1.png": "/porftolio/static/media/contactsLayer_1.081f09ce09fdab752888.png",
     "static/media/zurk1.png": "/porftolio/static/media/zurk1.61ca91389fa158eaa1e5.png",
@@ -22,11 +23,11 @@
     "static/media/pin.svg": "/porftolio/static/media/pin.78c9d25fcc20d67d6c6e.svg",
     "static/media/nextReturnIcon.svg": "/porftolio/static/media/nextReturnIcon.b228d74620365608294746ef241adf52.svg",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
-    "main.dbff548d.css.map": "/porftolio/static/css/main.dbff548d.css.map",
-    "main.b376b68f.js.map": "/porftolio/static/js/main.b376b68f.js.map"
+    "main.e155db9a.css.map": "/porftolio/static/css/main.e155db9a.css.map",
+    "main.13bde0f4.js.map": "/porftolio/static/js/main.13bde0f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbff548d.css",
-    "static/js/main.b376b68f.js"
+    "static/css/main.e155db9a.css",
+    "static/js/main.13bde0f4.js"
   ]
 }
