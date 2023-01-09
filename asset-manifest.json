@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/porftolio/static/css/main.e155db9a.css",
-    "main.js": "/porftolio/static/js/main.13bde0f4.js",
+    "main.css": "/porftolio/static/css/main.17c7d97c.css",
+    "main.js": "/porftolio/static/js/main.44eda302.js",
     "static/media/Empty.png": "/porftolio/static/media/Empty.67d19fdc06c20b2a3598.png",
     "static/media/sectionTwoBackground.jpg": "/porftolio/static/media/sectionTwoBackground.ca7f1672fd80f089c8a5.jpg",
     "static/media/strayFrontSide.png": "/porftolio/static/media/strayFrontSide.64b8a97e80e8422a7d22.png",
@@ -23,11 +23,11 @@
     "static/media/pin.svg": "/porftolio/static/media/pin.78c9d25fcc20d67d6c6e.svg",
     "static/media/nextReturnIcon.svg": "/porftolio/static/media/nextReturnIcon.b228d74620365608294746ef241adf52.svg",
     "static/media/msg.svg": "/porftolio/static/media/msg.40ba1c4dae9bb910c21aaf5c874251f5.svg",
-    "main.e155db9a.css.map": "/porftolio/static/css/main.e155db9a.css.map",
-    "main.13bde0f4.js.map": "/porftolio/static/js/main.13bde0f4.js.map"
+    "main.17c7d97c.css.map": "/porftolio/static/css/main.17c7d97c.css.map",
+    "main.44eda302.js.map": "/porftolio/static/js/main.44eda302.js.map"
   },
   "entrypoints": [
-    "static/css/main.e155db9a.css",
-    "static/js/main.13bde0f4.js"
+    "static/css/main.17c7d97c.css",
+    "static/js/main.44eda302.js"
   ]
 }
